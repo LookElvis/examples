@@ -1,7 +1,5 @@
 package Common.ThreadTest;
 
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * Created by liuxiang on 2019/4/19.
  */
