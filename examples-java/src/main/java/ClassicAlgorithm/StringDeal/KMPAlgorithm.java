@@ -1,10 +1,10 @@
-package ClassicAlgorithm;
+package ClassicAlgorithm.StringDeal;
 
 /**
  * 字符串匹配，查找t在s中的位置
  * Created by liuxiang on 2019/1/7.
  */
-public class KMP {
+public class KMPAlgorithm {
     public static void main(String[] args) {
         String s = "ABABCDfeABABACAEAGGFCAB";
         String t = "ABABACA";
