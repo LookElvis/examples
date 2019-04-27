@@ -78,16 +78,15 @@ public class DijstraAlgorithm {
         }
 
         for (int i = 0; i < matrix.length; i++) {
-            if (shortest[i] == MaxValue) {
-                System.out.println(source + "到" + i + "不可达");
-                System.out.println("——————————");
-                continue;
-            }
-
             if (i != source) {
-                System.out.println(source + "到" + i + "的最短路径为：" + path[i]);
-                System.out.println(source + "到" + i + "的最短距离是：" + shortest[i]);
-                System.out.println("——————————");
+                if (shortest[i] == MaxValue) {
+                    System.out.println(source + "到" + i + "不可达");
+                    System.out.println("——————————");
+                } else {
+                    System.out.println(source + "到" + i + "的最短路径为：" + path[i]);
+                    System.out.println(source + "到" + i + "的最短距离是：" + shortest[i]);
+                    System.out.println("——————————");
+                }
             }
         }
     }
