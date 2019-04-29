@@ -3,7 +3,7 @@ package ClassicAlgorithm.ShortestDistance;
 import java.util.Scanner;
 
 /**
- * 支持负权，动态规划，多源最短路径，n³复杂度
+ * 支持负权，动态规划，多源最短路径，不支持负权环，n³复杂度
  * Created by liuxiang on 2019/4/26.
  */
 public class FloydAlgorithm {
