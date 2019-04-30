@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 /**
  * 支持DAG图，非负权，贪心算法，单源最短路径，n²复杂度，可以用堆进行获取最小值优化
+ * 输入：
+ * 节点数、边数
+ * （边起点 边终点 边权值）*边数
  * Created by liuxiang on 2019/4/26.
  */
 public class DijstraAlgorithm {

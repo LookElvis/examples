@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 /**
  * 支持负权，动态规划，多源最短路径，不支持负权环，n³复杂度
+ *  输入：
+ * 节点数、边数
+ * （边起点 边终点 边权值）*边数
+ * 源点
  * Created by liuxiang on 2019/4/26.
  */
 public class FloydAlgorithm {
