@@ -11,7 +11,7 @@ import java.util.Scanner;
  * （物品价值 物品重量 物品名称）*物品数
  * Created by liuxiang on 2019/4/29.
  */
-public class PacketProblemAlgorithm {
+public class ZeroOnePackAlgorithm {
     public static Map<Integer, String> map = new HashMap<>();
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
