@@ -30,5 +30,4 @@ object Score {
     //输出结果
     rddtemp.foreach(println)
   }
-
 }

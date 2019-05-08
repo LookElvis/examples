@@ -1,12 +1,12 @@
-package SparkTest;
-import org.apache.spark.rdd.RDD
+package PracticeTest
+
 import org.apache.spark.{SparkConf, SparkContext}
 
 /**
   * Created by liuxiang on 2019/5/7.
   */
 
-object zipOperatorTest {
+object EduCoder1 {
   def main(args: Array[String]): Unit = {
     val conf =new SparkConf().setAppName("educoder1").setMaster("local")
     val sc=new SparkContext(conf)
