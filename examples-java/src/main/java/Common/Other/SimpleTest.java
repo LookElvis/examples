@@ -8,7 +8,13 @@ import java.util.Scanner;
  */
 public class SimpleTest {
     public static void main(String[] args) {
-    	System.out.println("helloWorld");
-    }
+        System.out.println(Float.MIN_NORMAL);
+        System.out.println(Float.MIN_VALUE);
+        double a = 1.0-0.875;
+        System.out.println(a);
 
+
+
+
+    }
 }
