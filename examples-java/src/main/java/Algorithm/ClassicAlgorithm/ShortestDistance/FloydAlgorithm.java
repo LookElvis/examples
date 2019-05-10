@@ -67,13 +67,9 @@ public class FloydAlgorithm {
                 if (i != j) {
                     if (matrix[i][j] == MaxValue) {
                         System.out.println(i + "到" + j + "不可达");
-                        System.out.println("——————————");
-                        continue;
                     } else {
                         //对连续重复的进行去重
-                        System.out.println(i + "到" + j + "的最短路径为：" + path[i][j]);
-                        System.out.println(i + "到" + j + "的最短距离是：" + matrix[i][j]);
-                        System.out.println("——————————");
+                        System.out.println(i + "到" + j + "的最短路径为：" + path[i][j] + "，最短距离是：" + matrix[i][j]);
                     }
                 }
             }
