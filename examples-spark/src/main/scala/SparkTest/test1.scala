@@ -12,9 +12,9 @@ object test1 {
     val sc = new SparkContext(conf)
 
     //Create the first rdd from the text
-    val rdd = sc.parallelize(List("dog","an","cat","an","cat"), 4)
+    val rdd = sc.parallelize(List("dog","an","cat","an","cat"))
 
-    rdd.sortBy(_.charAt(0), true, 4).foreach(println)
+    rdd.sortBy(_.charAt(0), true).foreach(println)
 
     sc.stop()
 
