@@ -11,7 +11,11 @@ object ScalaTopTest {
     val (topStock, topPrice) = symbols.map { t => (t, getYearEndClosingPrice( t, year )) }
       .maxBy( _._2 )
 
-    printf(s"top stock of $year is $topPrice , $topStock")
+    println(s"top stock of $year is $topPrice , $topStock")
+
+    val temperature = List(7, 6, 5, 3, 4, 2)
+    val max = findMax(temperature)
+    println(max)
   }
 
   def getYearEndClosingPrice(t:String, year:Int): Int = {
@@ -22,5 +26,11 @@ object ScalaTopTest {
       result = 1
     }
     result
+  }
+
+  def findMax(temperatures: List[Int]) = {
+    //foldLeft对集合中所有元素调用Math.max方法
+    //结果传入下一次调用该方法作为参数，初始值为括号内的值
+    temperatures.foldLeft(Integer.MIN_VALUE) { Math.max }
   }
 }
