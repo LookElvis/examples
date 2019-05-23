@@ -31,7 +31,7 @@ public class LocalExecutorTest {
 
 		//来源于对象
 		List<Object> a = null ;
-		ConvertCallback<Object,List<Object[]>> callback2  = b -> {
+		ConvertCallback<Object, List<Object[]>> callback2  = b -> {
 			//同上转换
 			System.out.println(b);
 			return null ;

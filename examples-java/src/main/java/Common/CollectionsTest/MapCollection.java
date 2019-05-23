@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * Created by liuxiang on 2019/4/23.
  */
-public class mapTest {
+public class MapCollection {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int n = input.nextInt();
