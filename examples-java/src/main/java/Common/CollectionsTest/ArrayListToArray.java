@@ -12,10 +12,10 @@ public class ArrayListToArray {
         list.add("testB");
         list.add("testC");
 
-//        String[] strings = (String[]) list.toArray();
-//        for (int i = 0; i < strings.length; i++) {
-//            System.out.println(strings[i]);
-//        }
+        String[] strings = (String[]) list.toArray(new String[0]);
+        for (int i = 0; i < strings.length; i++) {
+            System.out.println(strings[i]);
+        }
 
 //        Object[] objects = list.toArray();
 //        for (int i = 0; i < objects.length; i++) {
