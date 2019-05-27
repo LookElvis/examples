@@ -14,6 +14,7 @@ public class DijstraAlgorithm {
     public static int MaxValue = 100000;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("请输入顶点数和边数:");
         //顶点数
         int vertex = input.nextInt();
         //边数
@@ -27,11 +28,11 @@ public class DijstraAlgorithm {
             }
         }
         for (int i = 0; i < edge; i++) {
+            System.out.println("请输入第" + (i + 1) + "条边与其权值:");
             int source = input.nextInt();
             int target = input.nextInt();
             int weight = input.nextInt();
             matrix[source][target] = weight;
-//            matrix[target][source] = weight;
         }
 
         //单源最短路径，源点
@@ -57,16 +58,16 @@ public class DijstraAlgorithm {
         shortest[source] = 0;
         visited[source] = 1;
 
-        System.out.println("shortest0:");
-        for (int i = 0; i < shortest.length; i++) {
-            System.out.print(shortest[i] + " ");
-        }
-        System.out.println();
-        System.out.println("visited0:");
-        for (int i = 0; i < visited.length; i++) {
-            System.out.print(visited[i] + " ");
-        }
-        System.out.println();
+//        System.out.println("shortest0:");
+//        for (int i = 0; i < shortest.length; i++) {
+//            System.out.print(shortest[i] + " ");
+//        }
+//        System.out.println();
+//        System.out.println("visited0:");
+//        for (int i = 0; i < visited.length; i++) {
+//            System.out.print(visited[i] + " ");
+//        }
+//        System.out.println();
 
         for (int i = 1; i < matrix.length; i++) {
             int min = Integer.MAX_VALUE;
@@ -84,16 +85,16 @@ public class DijstraAlgorithm {
             shortest[index] = min;
             visited[index] = 1;
 
-            System.out.println("shortest:" + index);
-            for (int t = 0; t < shortest.length; t++) {
-                System.out.print(shortest[t] + " ");
-            }
-            System.out.println();
-            System.out.println("visited:" + index);
-            for (int t = 0; t < visited.length; t++) {
-                System.out.print(visited[t] + " ");
-            }
-            System.out.println();
+//            System.out.println("shortest:" + index);
+//            for (int t = 0; t < shortest.length; t++) {
+//                System.out.print(shortest[t] + " ");
+//            }
+//            System.out.println();
+//            System.out.println("visited:" + index);
+//            for (int t = 0; t < visited.length; t++) {
+//                System.out.print(visited[t] + " ");
+//            }
+//            System.out.println();
 
             //更新从index跳到其它节点的较短路径
             for (int m = 0; m < matrix.length; m++) {
@@ -126,7 +127,7 @@ public class DijstraAlgorithm {
 //3 4 5
 //1 2 5
 //1 5 3
-//5 2 3
+//4 5 5
 //5 4 2
 //4 6 1
 //0

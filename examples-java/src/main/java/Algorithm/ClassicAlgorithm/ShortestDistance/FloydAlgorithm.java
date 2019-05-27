@@ -8,12 +8,14 @@ import java.util.Scanner;
  * 节点数、边数
  * （边起点 边终点 边权值）*边数
  * 源点
- * Created by liuxiang on 2019/4/26.
+ * Created by liuxiang on 2019/5/26.
  */
 public class FloydAlgorithm {
     public static int MaxValue = 100000;
+    public static int[][] path;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.println("请输入顶点数和边数:");
         //顶点数
         int vertex = input.nextInt();
         //边数
@@ -26,7 +28,13 @@ public class FloydAlgorithm {
                 matrix[i][j] = MaxValue;
             }
         }
+
+        //初始化路径数组
+        path = new int[matrix.length][matrix.length];
+
+        //初始化边权值
         for (int i = 0; i < edge; i++) {
+            System.out.println("请输入第" + (i + 1) + "条边与其权值:");
             int source = input.nextInt();
             int target = input.nextInt();
             int weight = input.nextInt();
@@ -39,10 +47,9 @@ public class FloydAlgorithm {
 
     //非递归实现
     public static void floyd(int[][] matrix) {
-        String[][] path = new String[matrix.length][matrix.length];
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix.length; j++) {
-                path[i][j] = i + "->" + j;
+                path[i][j] = -1;
              }
         }
 
@@ -51,14 +58,21 @@ public class FloydAlgorithm {
                 for (int j = 0; j < matrix.length; j++) {
                     if (matrix[i][m] + matrix[m][j] < matrix[i][j]) {
                         matrix[i][j] = matrix[i][m] + matrix[m][j];
-                        String s = path[i][m].split("->")[path[i][m].split("->").length - 1];
-                        String t = path[m][j].split("->")[0];
-                        path[i][j] = path[i][m] + "->" + path[m][j];
-                        if (s.equals(t)) {
-                            path[i][j] = path[i][j].replaceFirst(s + "->", "");
-                        }
+                        //记录经由哪个点到达
+                        path[i][j] = m;
                     }
                 }
+            }
+            System.out.println("经由点：" + m);
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix.length; j++) {
+                    if (matrix[i][j] == MaxValue) {
+                        System.out.print("MAX\t");
+                    } else {
+                        System.out.print(matrix[i][j] + "\t");
+                    }
+                }
+                System.out.println();
             }
         }
 
@@ -68,12 +82,26 @@ public class FloydAlgorithm {
                     if (matrix[i][j] == MaxValue) {
                         System.out.println(i + "到" + j + "不可达");
                     } else {
-                        //对连续重复的进行去重
-                        System.out.println(i + "到" + j + "的最短路径为：" + path[i][j] + "，最短距离是：" + matrix[i][j]);
+                        System.out.print(i + "到" + j + "的最短路径长度是：" + matrix[i][j]);
+                        System.out.print("最短路径为：" + i + "->");
+                        findPath(i, j);
+                        System.out.println(j);
                     }
                 }
             }
         }
+    }
+
+    //递归寻找路径
+    public static void findPath(int i, int j) {
+        int m = path[i][j];
+        if (m == -1) {
+            return;
+        }
+
+        findPath(i, m);
+        System.out.print(m + "->");
+        findPath(m, j);
     }
 }
 
