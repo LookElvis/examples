@@ -63,17 +63,17 @@ public class FloydAlgorithm {
                     }
                 }
             }
-            System.out.println("经由点：" + m);
-            for (int i = 0; i < matrix.length; i++) {
-                for (int j = 0; j < matrix.length; j++) {
-                    if (matrix[i][j] == MaxValue) {
-                        System.out.print("MAX\t");
-                    } else {
-                        System.out.print(matrix[i][j] + "\t");
-                    }
-                }
-                System.out.println();
-            }
+//            System.out.println("经由点：" + m);
+//            for (int i = 0; i < matrix.length; i++) {
+//                for (int j = 0; j < matrix.length; j++) {
+//                    if (matrix[i][j] == MaxValue) {
+//                        System.out.print("MAX\t");
+//                    } else {
+//                        System.out.print(matrix[i][j] + "\t");
+//                    }
+//                }
+//                System.out.println();
+//            }
         }
 
         for (int i = 0; i < matrix.length; i++) {
