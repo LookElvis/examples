@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 输入：
  * 节点数、边数
  * （边起点 边终点 边权值）*边数
- * Created by liuxiang on 2019/4/26.
+ * Created by liuxiang on 2019/5/26.
  */
 public class DijstraAlgorithm {
     //不能设置为Integer.MAX_VALUE，否则两个Integer.MAX_VALUE相加会溢出导致出现负权

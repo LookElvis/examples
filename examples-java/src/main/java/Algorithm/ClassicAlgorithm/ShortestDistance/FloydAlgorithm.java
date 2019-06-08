@@ -14,6 +14,7 @@ public class FloydAlgorithm {
     public static int MaxValue = 100000;
     public static int[][] path;
     public static void main(String[] args) {
+        long start = System.currentTimeMillis();
         Scanner input = new Scanner(System.in);
         System.out.println("请输入顶点数和边数:");
         //顶点数
@@ -43,6 +44,7 @@ public class FloydAlgorithm {
 
         //调用算法计算最短路径
         floyd(matrix);
+        System.out.println("Floyd算法Java实现耗时：" + (System.currentTimeMillis() - start) + "ms");
     }
 
     //非递归实现
@@ -63,17 +65,17 @@ public class FloydAlgorithm {
                     }
                 }
             }
-//            System.out.println("经由点：" + m);
-//            for (int i = 0; i < matrix.length; i++) {
-//                for (int j = 0; j < matrix.length; j++) {
-//                    if (matrix[i][j] == MaxValue) {
-//                        System.out.print("MAX\t");
-//                    } else {
-//                        System.out.print(matrix[i][j] + "\t");
-//                    }
-//                }
-//                System.out.println();
-//            }
+            System.out.println("经由点：" + m);
+            for (int i = 0; i < matrix.length; i++) {
+                for (int j = 0; j < matrix.length; j++) {
+                    if (matrix[i][j] == MaxValue) {
+                        System.out.print("i\t");
+                    } else {
+                        System.out.print(matrix[i][j] + "\t");
+                    }
+                }
+                System.out.println();
+            }
         }
 
         for (int i = 0; i < matrix.length; i++) {

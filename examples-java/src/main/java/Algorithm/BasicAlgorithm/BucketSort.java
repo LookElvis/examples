@@ -6,6 +6,7 @@ package Algorithm.BasicAlgorithm;
  */
 public class BucketSort {
     public static void main(String[] args) {
+        long start = System.currentTimeMillis();
         int a[] = {1, 2, 2, 7, 4, 9, 3, 5};
         //设定数组最大值，若不直接指定，可以用一个O(n)的函数来求最大值
         int max = 9;
@@ -15,6 +16,8 @@ public class BucketSort {
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }
+
+        System.out.println("桶排序算法Java实现耗时：" + (System.currentTimeMillis() - start) + "ms");
     }
 
     public static void bucketSort(int a[], int max) {
