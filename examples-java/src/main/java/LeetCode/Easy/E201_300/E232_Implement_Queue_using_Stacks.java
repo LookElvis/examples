@@ -21,7 +21,7 @@ public class E232_Implement_Queue_using_Stacks {
     static class MyQueue {
         Deque<Integer> deque;
 
-        /** Initialize your data structure here. */
+        /** Initialize your Data structure here. */
         public MyQueue() {
             deque = new LinkedList<>();
         }

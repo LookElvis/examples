@@ -24,7 +24,7 @@ public class E225_Implement_Stack_using_Queues {
     static class MyStack {
         Deque<Integer> queue;
 
-        /** Initialize your data structure here. */
+        /** Initialize your Data structure here. */
         public MyStack() {
             this.queue = new ArrayDeque<>();
         }

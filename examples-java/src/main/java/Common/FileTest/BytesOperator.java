@@ -26,7 +26,7 @@ public class BytesOperator {
 //        inputStream.close();
 
         //写出
-        File file2 = new File("D:\\result.txt");
+        File file2 = new File("D:\\Result.txt");
         FileOutputStream outputStream = new FileOutputStream(file2);
         String test = "test1 test2";
         byte[] bytes2 = test.getBytes();

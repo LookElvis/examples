@@ -20,7 +20,7 @@ public class E104_Maximum_Depth_of_Binary_Tree {
         n2.right = n4;
 
         int result = maxDepth(t1);
-//        int result = iterate(t1);
+//        int Result = iterate(t1);
         System.out.println(result);
     }
 

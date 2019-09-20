@@ -7,8 +7,7 @@ import org.apache.spark.{SparkConf, SparkContext}
   */
 object test1 {
   def main(args: Array[String]): Unit = {
-
-    val conf = new SparkConf().setAppName("test").setMaster("local")
+    val conf = new SparkConf().setAppName("test").setMaster("spark://115.157.201.166:7077")
     val sc = new SparkContext(conf)
 
     //Create the first rdd from the text
@@ -20,6 +19,5 @@ object test1 {
     val result = rdd1.join(rdd2).foreach(println)
 
     sc.stop()
-
     }
   }

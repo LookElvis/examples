@@ -13,7 +13,7 @@ public class FileUtils {
         //获取文本
         String path = FileUtils.class.getClassLoader().getResource("data.txt").getPath();
 //        String inputStream = System.getProperty("user.dir");
-//        String path = inputStream.concat("/data.txt");
+//        String path = inputStream.concat("/Data.txt");
 
         // 使用ArrayList来存储每行读取到的字符串
         List<String> list = new ArrayList<>();

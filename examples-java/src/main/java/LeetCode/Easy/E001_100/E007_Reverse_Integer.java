@@ -7,7 +7,7 @@ package LeetCode.Easy.E001_100;
  */
 public class E007_Reverse_Integer {
     public static void main(String[] args) {
-//        int result = reverse(1563847412);
+//        int Result = reverse(1563847412);
         int result = reverse(-1234);
         System.out.println(result);
     }

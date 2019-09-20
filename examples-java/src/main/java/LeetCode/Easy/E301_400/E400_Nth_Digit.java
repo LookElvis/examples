@@ -13,33 +13,33 @@ public class E400_Nth_Digit {
     }
 
 //    public static int findNthDigit(int n) {
-//        int result = 0;
+//        int Result = 0;
 //        int i;
-//        for (i = 1; result < n; i++) {
+//        for (i = 1; Result < n; i++) {
 //            if (i < 10) {
-//                result++;
+//                Result++;
 //            } else if (i < 100) {
-//                result += 2;
+//                Result += 2;
 //            } else if (i < 1000) {
-//                result += 3;
+//                Result += 3;
 //            } else if (i < 10000) {
-//                result += 4;
+//                Result += 4;
 //            } else if (i < 100000) {
-//                result += 5;
+//                Result += 5;
 //            } else if (i < 1000000) {
-//                result += 6;
+//                Result += 6;
 //            } else if (i < 10000000) {
-//                result += 7;
+//                Result += 7;
 //            } else if (i < 100000000) {
-//                result += 8;
+//                Result += 8;
 //            } else if (i < 1000000000) {
-//                result += 9;
+//                Result += 9;
 //            } else {
-//                result += 10;
+//                Result += 10;
 //            }
 //        }
 //        String string = i - 1 + "";
-//        int index = string.length()- (result - n) - 1;
+//        int index = string.length()- (Result - n) - 1;
 //        return Integer.parseInt(string.charAt(index) + "");
 //    }
 
