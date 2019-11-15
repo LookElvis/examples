@@ -16,6 +16,11 @@ object ScalaTopTest {
     val temperature = List(7, 6, 5, 3, 4, 2)
     val max = findMax(temperature)
     println(max)
+
+    val a = 123
+    val b = 334.toDouble
+    val c = a / b
+    println(c)
   }
 
   def getYearEndClosingPrice(t:String, year:Int): Int = {

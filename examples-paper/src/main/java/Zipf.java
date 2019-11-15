@@ -1,5 +1,3 @@
-package DataGenerator;
-
 import org.apache.commons.math3.distribution.AbstractIntegerDistribution;
 import org.apache.commons.math3.exception.NotStrictlyPositiveException;
 import org.apache.commons.math3.exception.util.LocalizedFormats;
@@ -8,7 +6,11 @@ import org.apache.commons.math3.random.Well19937c;
 import org.apache.commons.math3.util.FastMath;
 
 /**
- * Implementation of the Zipf distribution.
+ * Created by liuxiang on 2019/11/5.
+ * 用于生成呈现Zipf分布的数据
+ * Zipf包含两个参数，numberOfElements表示抽取的数据范围，(1, numberOfElements]，设置为key的数量作为下标
+ * exponent表示u，我们选取的范围是0.2-1.2，exponent接近0则是均匀分布
+ * 使用zipf.sample获得一个值
  * <p>
  * <strong>Parameters:</strong>
  * For a random variable {@code X} whose values are distributed according to this
@@ -319,7 +321,7 @@ public class Zipf extends AbstractIntegerDistribution {
             this.s = 2d - hIntegralInverse(hIntegral(2.5) - h(2));
         }
 
-        /** Generate one integral number in the range [1, numberOfElements].
+        /** GenerateZipfWithJava one integral number in the range [1, numberOfElements].
          * @param random random generator to use
          * @return generated integral number in the range [1, numberOfElements]
          */
@@ -470,10 +472,17 @@ public class Zipf extends AbstractIntegerDistribution {
         }
     }
     public static void main(String[] args){
-        Zipf z=new Zipf(5,2);
-        for(int i=1;i<=10;i++){
+        int number = 20;
+        Zipf z = new Zipf(number,0.2);
+        int[] count = new int[number];
+        for(int i = 0; i < 10000; i++){
             int n = z.sample();
-            System.out.println(n);
+            count[n-1]++;
+            System.out.print(n + " ");
+        }
+        System.out.println();
+        for (int j = 0; j < number; j++) {
+            System.out.print(count[j] + " ");
         }
     }
 }
