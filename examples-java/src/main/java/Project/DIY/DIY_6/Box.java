@@ -1,4 +1,4 @@
-package Common.GenericTest;
+package Project.DIY.DIY_6;
 
 /**
  * Created by liuxiang on 2018/7/9.

@@ -1,4 +1,4 @@
-package Common.CompanyTest;
+package Interview;
 
 import java.util.Scanner;
 

@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/examples.iml" filepath="$PROJECT_DIR$/examples.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples-flink/examples-flink.iml" filepath="$PROJECT_DIR$/examples-flink/examples-flink.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples-java/examples-java.iml" filepath="$PROJECT_DIR$/examples-java/examples-java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples-paper/examples-paper.iml" filepath="$PROJECT_DIR$/examples-paper/examples-paper.iml" />
       <module fileurl="file://$PROJECT_DIR$/examples-spark/examples-spark.iml" filepath="$PROJECT_DIR$/examples-spark/examples-spark.iml" />
     </modules>
   </component>

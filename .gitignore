@@ -23,11 +23,12 @@ hs_err_pid*
 .gradle
 
 ### IntelliJ IDEA ###
-.idea/workspace.xml
+.idea/
 *.iws
 *.iml
 *.ipr
-*.DS_Store
+.mvn
+mvnw*
 
 ### NetBeans ###
 nbproject/private/

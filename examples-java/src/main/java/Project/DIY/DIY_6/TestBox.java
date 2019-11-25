@@ -1,7 +1,6 @@
-package Common.GenericTest;
+package Project.DIY.DIY_6;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 

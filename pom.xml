@@ -12,6 +12,7 @@
         <module>examples-java</module>
         <module>examples-flink</module>
         <module>examples-spark</module>
+        <module>examples-paper</module>
     </modules>
 
     <build>

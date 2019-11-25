@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="examples-flink" />
         <module name="examples-java" />
+        <module name="examples-paper" />
         <module name="examples-spark" />
         <module name="examplesnetwork" />
         <module name="java" />
@@ -18,6 +19,7 @@
       <module name="examples-flink" target="1.8" />
       <module name="examples-java" target="1.8" />
       <module name="examples-network" target="1.8" />
+      <module name="examples-paper" target="1.8" />
       <module name="examples-spark" target="1.8" />
     </bytecodeTargetLevel>
   </component>
