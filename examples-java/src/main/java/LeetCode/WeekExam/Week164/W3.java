@@ -1,9 +1,9 @@
 package LeetCode.WeekExam.Week164;
 
-import Algorithm.PublicClass.Utils;
+
+import LeetCode.PublicClass.Utils;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -16,7 +16,6 @@ public class W3 {
         String searchWord = "tatiana";
         List<List<String>> list = suggestedProducts(products, searchWord);
         Utils.printDoubleArrays(list);
-
     }
 
     public static List<List<String>> suggestedProducts(String[] products, String searchWord) {
