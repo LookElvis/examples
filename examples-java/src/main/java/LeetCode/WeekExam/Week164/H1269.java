@@ -3,7 +3,7 @@ package LeetCode.WeekExam.Week164;
 /**
  * Created by liuxiang on 2019/11/24.
  */
-public class W4 {
+public class H1269 {
     public static void main(String[] args) {
         int steps = 3;
         int arrLen = 2;

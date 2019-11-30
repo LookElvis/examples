@@ -3,7 +3,7 @@ package LeetCode.WeekExam.Week164;
 /**
  * Created by liuxiang on 2019/11/24.
  */
-public class W1 {
+public class E1266 {
     public static void main(String[] args) {
         int[][] points = new int[][]{
                 {559,511},{932,618}

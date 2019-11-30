@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by liuxiang on 2019/11/24.
  */
-public class W3 {
+public class M1268 {
     public static void main(String[] args) {
         String[] products = {"havana"};
         String searchWord = "tatiana";

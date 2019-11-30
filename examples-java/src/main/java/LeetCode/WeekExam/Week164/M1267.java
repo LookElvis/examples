@@ -5,7 +5,7 @@ import LeetCode.PublicClass.Utils;
 /**
  * Created by liuxiang on 2019/11/24.
  */
-public class W2 {
+public class M1267 {
     public static void main(String[] args) {
         int[][] grid = new int[][] {
                 {1}
