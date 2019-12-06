@@ -5,7 +5,7 @@ package Algorithm.BasicAlgorithm;
  */
 public class BubbleSort {
 	public static void main (String[] args) {
-		int[] array = new int[] {3, 6, 13, 5, 2, 7, 9};
+		int[] array = new int[] {3, 6, 13, 5, 3, 2, 7, 9};
 		bubbleSort(array);
 		for (int i : array) {
 			System.out.print(i + " ");
