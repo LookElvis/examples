@@ -24,11 +24,11 @@ public class MergeSort {
 
 	public static void merge(int[] array, int l, int m, int r) {
 		int[] help = new int[r - l + 1];
-		int i = 0;
 		int p1 = l;
 		int p2 = m + 1;
+		int i = 0;
 		while (p1 <= m && p2 <= r) {
-			help[i++] = array[p1] < array[p2] ? array[p1++] :array[p2++];
+			help[i++] = array[p1] < array[p2] ? array[p1++] : array[p2++];
 		}
 		while (p1 <= m) {
 			help[i++] = array[p1++];
