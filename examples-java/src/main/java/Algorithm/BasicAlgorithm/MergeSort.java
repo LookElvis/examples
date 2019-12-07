@@ -6,26 +6,38 @@ package Algorithm.BasicAlgorithm;
 public class MergeSort {
 	public static void main (String[] args) {
 		int[] array = new int[] {3, 6, 13, 5, 3, 2, 7, 9};
-		qSort(array, 0, array.length - 1);
+		mergeSort(array, 0, array.length - 1);
 		for (int i : array) {
 			System.out.print(i + " ");
 		}
 	}
 
-	public static void qSort(int[] array, int l, int r) {
-		if (l == r) {
+	public static void mergeSort(int[] array, int L, int R) {
+		if (L == R) {
 			return;
 		}
-
-
+		int mid = L + (R - L) / 2;
+		mergeSort(array, L, mid);
+		mergeSort(array, mid + 1, R);
+		merge(array, L, mid, R);
 	}
 
-	public static void swap(int[] array, int i, int j) {
-		if (i == j) {
-			return;
+	public static void merge(int[] array, int l, int m, int r) {
+		int[] help = new int[r - l + 1];
+		int i = 0;
+		int p1 = l;
+		int p2 = m + 1;
+		while (p1 <= m && p2 <= r) {
+			help[i++] = array[p1] < array[p2] ? array[p1++] :array[p2++];
 		}
-		array[i] ^= array[j];
-		array[j] ^= array[i];
-		array[i] ^= array[j];
+		while (p1 <= m) {
+			help[i++] = array[p1++];
+		}
+		while (p2 <= r) {
+			help[i++] = array[p2++];
+		}
+		for (i = 0; i < help.length; i++) {
+			array[l + i] = help[i];
+		}
 	}
 }
