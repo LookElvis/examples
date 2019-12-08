@@ -1,7 +1,7 @@
 package Algorithm.Problem;
 
 /**
- * 逆序对
+ * 逆序对个数
  * Created by Elvis on 2019/12/8.
  */
 public class P2_2 {
