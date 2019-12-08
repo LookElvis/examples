@@ -8,7 +8,7 @@ public class M5281 {
         int l = 1;
         int r = 10000000;
         while (l < r) {
-            int mid = (l + r) >> 1;
+            int mid = l + ((r - l) >> 1);
             int count = 0;
             for (int i = 0; i < nums.length; i++) {
                 count += (nums[i] + mid - 1) / mid;
