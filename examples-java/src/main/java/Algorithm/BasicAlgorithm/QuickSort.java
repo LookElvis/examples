@@ -21,8 +21,8 @@ public class QuickSort {
 	}
 
 	public static int[] partition(int[] array, int l, int r) {
-		//int pivlot = array[l + ((r - l) >> 1)];
-		int pivlot = array[r];
+        int pivlot = array[l + (int) Math.random() * (r - l + 1)];
+//		int pivlot = array[r];
 		int i = l - 1;
 		int j = r + 1;
 		while (l < j) {
