@@ -12,7 +12,6 @@ public class M213_House_Robber_Two {
 		int i = getMax(Arrays.copyOfRange(nums, 0, nums.length - 1));
 		int j = getMax(Arrays.copyOfRange(nums, 1, nums.length));
 		return Math.max(i, j);
-
     }
 
 	public int getMax(int[] nums) {
