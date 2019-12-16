@@ -1,27 +1,26 @@
-package Algorithm.BasicAlgorithm;
+package Algorithm.Bilibili;
 
 /**
  * Created by Elvis on 2019/12/5.
  */
-public class SelectionSort {
+public class InsertionSort {
 	public static void main (String[] args) {
 		int[] array = new int[] {3, 6, 13, 5, 3, 2, 7, 9};
-		selectionSort(array);
+		insertionSort(array);
 		for (int i : array) {
 			System.out.print(i + " ");
 		}
 	}
 
-	public static void selectionSort(int[] array) {
+	public static void insertionSort(int[] array) {
 		if (array == null || array.length < 2) {
 			return;
 		}
-		for (int i = 0; i < array.length - 1; i++) {
-			int minIndex = i;
-			for (int j = i + 1; j < array.length; j++) {
-				minIndex = array[j] < array[minIndex] ? j : minIndex;
+
+		for (int i = 1; i < array.length; i++) {
+			for (int j = i - 1; j >= 0 && array[j] > array[j + 1]; j--) {
+				swap(array, j, j + 1);
 			}
-			swap(array, i, minIndex);
 		}
 	}
 

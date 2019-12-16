@@ -1,4 +1,4 @@
-package Algorithm.BasicAlgorithm;
+package Algorithm.Bilibili;
 
 /**
  * Created by Elvis on 2019/12/5.
