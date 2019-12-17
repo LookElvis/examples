@@ -27,7 +27,6 @@ public class Practice {
 		if (array == null || array.length < 2) {
 			return;
 		}
-
 		for (int i = 0; i < array.length; i++) {
 			heapInsert(array, i);
 		}
@@ -44,11 +43,11 @@ public class Practice {
 		int left = index * 2 + 1;
 		while (left < heapSize) {
 			int largest = left + 1 < heapSize && array[left + 1] > array[left] ? left + 1 : left;
-			largest = array[largest] > array[index] ? largest : index;
+			largest = array[index] > array[largest] ? index : largest;
 			if (largest == index) {
 				break;
 			}
-			swap(array, largest, index);
+			swap(array, index, largest);
 			index = largest;
 			left = index * 2 + 1;
 		}
@@ -59,7 +58,7 @@ public class Practice {
 			swap(array, index, (index - 1) / 2);
 			index = (index - 1) / 2;
 		}
-	}
+	} 
 
 	public static void quickSort(int[] array, int l, int r) {
 		if (l < r) {
