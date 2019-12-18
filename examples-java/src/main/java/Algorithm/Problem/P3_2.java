@@ -11,10 +11,10 @@ public class P3_2 {
                 {9, 10, 11, 12},
                 {13, 14, 15, 16}
         };
-        zOrderPrint(m);
+        printZigZag(m);
     }
 
-    public static void zOrderPrint(int[][] m) {
+    public static void printZigZag(int[][] m) {
     	int row1 = 0;
     	int row2 = 0;
     	int col1 = 0;
