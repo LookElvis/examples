@@ -1,4 +1,4 @@
-package Algorithm.SwordForOffer;
+package Algorithm.SwordForOffer.S1_10;
 
 /**
  * Created by Elvis on 2019/12/13.

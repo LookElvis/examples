@@ -1,4 +1,4 @@
-package Algorithm.SwordForOffer;
+package Algorithm.SwordForOffer.S1_10;
 
 /**
  * 二维数组中的查找

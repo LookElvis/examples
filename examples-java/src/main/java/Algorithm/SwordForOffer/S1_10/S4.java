@@ -1,4 +1,4 @@
-package Algorithm.SwordForOffer;
+package Algorithm.SwordForOffer.S1_10;
 
 import LeetCode.PublicClass.TreeNode;
 import LeetCode.PublicClass.Utils;
