@@ -1,4 +1,4 @@
-package Algorithm.Problem;
+package Algorithm.Bilibili.Problem;
 
 import LeetCode.PublicClass.ListNode;
 import LeetCode.PublicClass.Utils;

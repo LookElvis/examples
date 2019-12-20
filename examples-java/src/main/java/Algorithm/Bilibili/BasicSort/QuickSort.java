@@ -1,4 +1,4 @@
-package Algorithm.Bilibili;
+package Algorithm.Bilibili.BasicSort;
 
 import LeetCode.PublicClass.Utils;
 

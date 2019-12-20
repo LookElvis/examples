@@ -1,4 +1,4 @@
-package Algorithm.Problem;
+package Algorithm.Bilibili.Problem;
 
 /**
  * 小和问题

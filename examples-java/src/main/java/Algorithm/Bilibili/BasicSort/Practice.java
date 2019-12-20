@@ -1,4 +1,4 @@
-package Algorithm.Bilibili;
+package Algorithm.Bilibili.BasicSort;
 
 /**
  * Created by Elvis on 2019/12/9.
