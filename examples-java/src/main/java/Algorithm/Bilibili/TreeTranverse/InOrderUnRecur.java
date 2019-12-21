@@ -1,6 +1,7 @@
 package Algorithm.Bilibili.TreeTranverse;
 
 import LeetCode.PublicClass.TreeNode;
+import LeetCode.PublicClass.Utils;
 
 import java.util.Stack;
 
@@ -21,6 +22,7 @@ public class InOrderUnRecur {
         t1.right = t4;
         t2.left = t5;
         inOrderUnRecur(root);
+        Utils.printTree(root);
     }
 
     public static void inOrderUnRecur(TreeNode head) {
