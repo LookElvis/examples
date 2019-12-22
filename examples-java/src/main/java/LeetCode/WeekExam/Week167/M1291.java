@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Created by Elvis on 2019/12/15.
  */
-public class M283 {
+public class M1291 {
     public static void main(String[] args) {
         sequentialDigits(100, 300);
     }

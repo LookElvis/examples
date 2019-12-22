@@ -3,7 +3,7 @@ package LeetCode.WeekExam.Week165;
 /**
  * Created by liuxiang on 2019/11/24.
  */
-public class E1270 {
+public class E1275 {
     public String tictactoe(int[][] moves) {
         int[][] x = new int[3][3];
         int[][] o = new int[3][3];

@@ -3,5 +3,5 @@ package LeetCode.WeekExam.Week167;
 /**
  * Created by Elvis on 2019/12/15.
  */
-public class M284 {
+public class M1292 {
 }

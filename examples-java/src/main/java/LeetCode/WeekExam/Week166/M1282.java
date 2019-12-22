@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by Elvis on 2019/12/8.
  */
-public class M5280 {
+public class M1282 {
     public List<List<Integer>> groupThePeople(int[] groupSizes) {
         List<List<Integer>> list = new ArrayList<>();
         Map<Integer, String> map = new HashMap<>();

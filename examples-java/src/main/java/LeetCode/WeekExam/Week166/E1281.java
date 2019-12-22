@@ -3,7 +3,7 @@ package LeetCode.WeekExam.Week166;
 /**
  * Created by Elvis on 2019/12/8.
  */
-public class E5279 {
+public class E1281 {
     public int subtractProductAndSum(int n) {
         int count = 0;
         int mul = 1;

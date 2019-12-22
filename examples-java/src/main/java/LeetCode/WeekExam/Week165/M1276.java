@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by liuxiang on 2019/11/24.
  */
-public class M1271 {
+public class M1276 {
     public static void main(String[] args) {
         int tomatoSlices = 2385088;
         int cheeseSlices = 164763;

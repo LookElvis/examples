@@ -5,7 +5,7 @@ import LeetCode.PublicClass.ListNode;
 /**
  * Created by Elvis on 2019/12/15.
  */
-public class E282 {
+public class E1290 {
     public int getDecimalValue(ListNode head) {
         StringBuilder sb = new StringBuilder();
         ListNode p = head;

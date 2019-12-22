@@ -3,7 +3,7 @@ package LeetCode.WeekExam.Week166;
 /**
  * Created by Elvis on 2019/12/8.
  */
-public class M5281 {
+public class M1283 {
     public int smallestDivisor(int[] nums, int threshold) {
         int l = 1;
         int r = 10000000;

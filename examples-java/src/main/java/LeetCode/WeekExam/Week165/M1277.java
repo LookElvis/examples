@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by liuxiang on 2019/11/24.
  */
-public class M1272 {
+public class M1277 {
     public static void main(String[] args) {
 
     }
