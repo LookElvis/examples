@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class M1230 {
     public static void main(String[] args) {
-        
+
     }
 
     public ArrayList<Integer> list1 = new ArrayList<>();
