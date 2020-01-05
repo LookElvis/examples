@@ -7,7 +7,7 @@ public class M1233 {
     public static void main(String[] args) {
 
     }
-    
+
     public int[] xorQueries(int[] arr, int[][] queries) {
         int[] res = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
