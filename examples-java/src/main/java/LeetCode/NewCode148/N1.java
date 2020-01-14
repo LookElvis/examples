@@ -1,4 +1,4 @@
-package LeetCode.NewCode;
+package LeetCode.NewCode148;
 
 import LeetCode.PublicClass.TreeNode;
 
