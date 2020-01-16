@@ -1,6 +1,6 @@
 package Algorithm.Bilibili.Problem;
 
-import LeetCode.PublicClass.Utils;
+import PublicClass.Utils;
 
 /**
  * Created by Elvis on 2019/12/21.

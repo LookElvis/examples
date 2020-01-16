@@ -1,7 +1,7 @@
 package Algorithm.Bilibili.TreeTranverse;
 
-import LeetCode.PublicClass.TreeNode;
-import LeetCode.PublicClass.Utils;
+import PublicClass.TreeNode;
+import PublicClass.Utils;
 
 import java.util.Stack;
 

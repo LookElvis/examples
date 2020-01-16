@@ -1,7 +1,7 @@
 package Algorithm.Bilibili.Problem;
 
-import LeetCode.PublicClass.ListNode;
-import LeetCode.PublicClass.Utils;
+import PublicClass.ListNode;
+import PublicClass.Utils;
 
 /**
  * Created by Elvis on 2019/12/18.

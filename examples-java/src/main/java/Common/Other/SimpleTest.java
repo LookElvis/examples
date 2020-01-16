@@ -1,6 +1,6 @@
 package Common.Other;
 
-import LeetCode.PublicClass.Utils;
+import PublicClass.Utils;
 
 import java.util.*;
 

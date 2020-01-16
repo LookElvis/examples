@@ -1,6 +1,6 @@
 package Algorithm.Bilibili.TreeTranverse;
 
-import LeetCode.PublicClass.TreeNode;
+import PublicClass.TreeNode;
 
 /**
  * Created by Elvis on 2019/12/20.
