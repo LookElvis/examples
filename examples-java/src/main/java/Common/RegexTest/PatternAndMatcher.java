@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class PatternAndMatcher {
     public static void main(String[] args) {
         String s = "iphone xs max高清壁纸";
-//        String[] strings = s.split("\\d+");
+//        String[] strings = s.split("\\d1+");
 //        for (int i = 0; i < strings.length; i++) {
 //            System.out.println(strings[i]);
 //        }

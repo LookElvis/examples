@@ -76,4 +76,4 @@ public class C201403 {
 //ls -a -l -a documents -b
 //ls
 //ls -w 10 -x -w 15
-//ls -a -b -c -d -e -l
+//ls -a -b -c -d1 -e -l

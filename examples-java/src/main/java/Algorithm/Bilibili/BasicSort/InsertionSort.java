@@ -18,6 +18,22 @@ public class InsertionSort {
 		}
 
 		for (int i = 1; i < array.length; i++) {
+			int index = i - 1;
+			int tmp = array[i];
+			while (index >= 0 && tmp < array[index]) {
+				array[index + 1] = array[index];
+				index--;
+			}
+			array[index + 1] = tmp;
+		}
+	}
+
+	public static void insertionSort1(int[] array) {
+		if (array == null || array.length < 2) {
+			return;
+		}
+
+		for (int i = 1; i < array.length; i++) {
 			for (int j = i - 1; j >= 0 && array[j] > array[j + 1]; j--) {
 				swap(array, j, j + 1);
 			}

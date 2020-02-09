@@ -21,7 +21,7 @@ public class test {
 //            case "b":
 //                System.out.println("bbb");
 //
-//            case "d":
+//            case "d1":
 //                System.out.println("ddd");
 //            case "f":
 //                System.out.println("fff");
