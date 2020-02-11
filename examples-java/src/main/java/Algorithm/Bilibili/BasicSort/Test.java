@@ -6,34 +6,39 @@ package Algorithm.Bilibili.BasicSort;
 public class Test {
     public static void main(String[] args) {
     	int[] arr = new int[]{1, 3, 7, 4, 8, 2};
-		insertionSort(arr);
+		mergeSort(arr, 0, arr.length - 1);
     	for (int i = 0; i < arr.length; i++) {
     		System.out.print(arr[i] + " ");
     	}
     }
 
-    public static void insertionSort(int[] array) {
-    	if (array == null || array.length < 2) {
+    public static void mergeSort(int[] arr, int l, int r) {
+    	if (l == r) {
     		return;
     	}
 
-    	for (int i = 1; i < array.length; i++) {
-    		int index = i - 1;
-    		int tmp = array[i];
-    		while (index >= 0 && tmp < array[index]) {
-    			array[index + 1] = array[index];
-    			index--;
-    		}
-    		array[index + 1] = tmp;
-    	}
+    	int mid = l + ((r - l) >> 1);
+    	mergeSort(arr, l, mid);
+    	mergeSort(arr, mid + 1, r);
+    	merge(arr, l, mid + 1, r);
     }
 
-    public static void swap(int[] array, int i, int j) {
-    	if (i == j) {
-    		return;
+    public static void merge(int[] arr, int left, int mid, int right) {
+    	int[] helper = new int[right - left + 1];
+    	int i = left;
+    	int j = mid;
+    	int index = 0;
+    	while (i < mid && j < right) {
+    		helper[index++] = arr[i] < arr[j] ? arr[i++] : arr[j++];
     	}
-    	array[i] ^= array[j];
-    	array[j] ^= array[i];
-    	array[i] ^= array[j];
+    	while (i < mid) {
+    		helper[index++] = arr[i++];
+    	}
+    	while (j < right) {
+    		helper[index++] = arr[j++];
+    	}
+    	for (int t = 0; t < helper.length; t++) {
+    		arr[left + t] = helper[t];
+    	}
     }
 }
