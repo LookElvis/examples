@@ -16,6 +16,6 @@ public class Singleton {
  
 	// other useful methods here
 	public String getDescription() {
-		return "I'm a thread safe Singleton!";
+		return "I'm a thread safe LazySingleton!";
 	}
 }

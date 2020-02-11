@@ -11,6 +11,6 @@ public class Singleton {
 	
 	// other useful methods here
 	public String getDescription() {
-		return "I'm a statically initialized Singleton!";
+		return "I'm a statically initialized LazySingleton!";
 	}
 }

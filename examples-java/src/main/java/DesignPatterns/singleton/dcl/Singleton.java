@@ -1,7 +1,7 @@
 package DesignPatterns.singleton.dcl;
 
 //
-// Danger!  This implementation of Singleton not
+// Danger!  This implementation of LazySingleton not
 // guaranteed to work prior to Java 5
 //
 

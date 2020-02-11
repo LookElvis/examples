@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class DijstraAlgorithm {
     //不能设置为Integer.MAX_VALUE，否则两个Integer.MAX_VALUE相加会溢出导致出现负权
     public static int MaxValue = 100000;
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("请输入顶点数和边数:");
