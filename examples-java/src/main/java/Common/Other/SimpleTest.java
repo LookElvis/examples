@@ -2,6 +2,8 @@ package Common.Other;
 
 import PublicClass.Utils;
 
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.*;
 
 /**
@@ -27,5 +29,18 @@ public class SimpleTest {
             }
         });
         Utils.printArrayList(list);
+        Integer a = 321;
+        Integer b = 321;
+        System.out.println(a == b);
+        HashMap<Integer, String> map = new HashMap<>();
+        int aa = Integer.parseInt("121", 32);
+        System.out.println(aa);
+        int bb = Integer.parseInt("221", 32);
+        System.out.println(bb);
+        int res = aa + bb;
+        System.out.println(Integer.toString(res, 32));
+
+//        int[] arr = new int[] {1, 3, 5, 6};
+//        System.out.println(Arrays.asList(arr).size());
     }
 }
