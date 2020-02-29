@@ -20,8 +20,5 @@ public class demo2 {
             res[i] = target + unTarget * (10.0 / (1000 - i));
         }
         System.out.println(String.format("%.6f", res[n - 1]));
-//        if (n > 990) {
-//            System.out.println(String.format("%.6f", 1.0));
-//        }
     }
 }
