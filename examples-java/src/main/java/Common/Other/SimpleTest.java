@@ -39,6 +39,7 @@ public class SimpleTest {
         System.out.println(bb);
         int res = aa + bb;
         System.out.println(Integer.toString(res, 32));
+        System.out.println(String.format("%.6f", 1 / 3.0));
 
 //        int[] arr = new int[] {1, 3, 5, 6};
 //        System.out.println(Arrays.asList(arr).size());
