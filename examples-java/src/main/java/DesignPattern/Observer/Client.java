@@ -9,11 +9,11 @@ public class Client {
         Observer ob2 = new ConcreteObserver();
         Observer ob3 = new ConcreteObserver();
         Subject subject = new ConcreteSubject();
-        subject.Attach(ob1);
-        subject.Attach(ob2);
-        subject.Attach(ob3);
+        subject.Add(ob1);
+        subject.Add(ob2);
+        subject.Add(ob3);
         subject.Notify();
-        subject.Detach(ob2);
+        subject.Remove(ob2);
         subject.Notify();
     }
 }

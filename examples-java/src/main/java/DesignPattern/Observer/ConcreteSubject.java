@@ -9,12 +9,12 @@ import java.util.List;
 public class ConcreteSubject implements Subject{
     List<Observer> list = new ArrayList<>();
     @Override
-    public void Attach(Observer observer) {
+    public void Add(Observer observer) {
         list.add(observer);
     }
 
     @Override
-    public void Detach(Observer observer) {
+    public void Remove(Observer observer) {
         list.remove(observer);
     }
 
