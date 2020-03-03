@@ -6,6 +6,6 @@ package DesignPattern.Observer;
 public class ConcreteObserver implements Observer{
     @Override
     public void Update() {
-        System.out.println("Update");
+        System.out.println(this.toString() + "Update");
     }
 }

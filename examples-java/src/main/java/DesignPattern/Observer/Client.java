@@ -13,5 +13,7 @@ public class Client {
         subject.Attach(ob2);
         subject.Attach(ob3);
         subject.Notify();
+        subject.Detach(ob2);
+        subject.Notify();
     }
 }
