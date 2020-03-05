@@ -8,7 +8,7 @@ public class MyThread extends Thread{
     public void run() {
         System.out.println(Thread.currentThread().getId() + " is running1...");
         try {
-            Thread.sleep(60);
+            Thread.sleep(6000);
         } catch (Exception e) {
 
         }
