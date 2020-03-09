@@ -24,7 +24,6 @@ public class ReadWriteLock {
             wait();
         }
         writeLock++;
-        notifyAll();
         while (readLock > 0) {
             wait();
         }
