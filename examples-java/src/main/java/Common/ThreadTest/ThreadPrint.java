@@ -3,11 +3,11 @@ package Common.ThreadTest;
 /**
  * Created by Elvis on 2020/3/9.
  */
-public class threadPrint {
+public class ThreadPrint {
     private int orderNum = 3;
     public static int num = 1;
     public static void main(String[] args) {
-        threadPrint orderThread = new threadPrint();
+        ThreadPrint orderThread = new ThreadPrint();
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
