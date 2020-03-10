@@ -11,7 +11,7 @@ public class threadPrint {
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true) {
+                while (num <= 100) {
                     orderThread.printA();
                 }
             }
@@ -19,7 +19,7 @@ public class threadPrint {
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true) {
+                while (num <= 100) {
                     orderThread.printB();
                 }
             }
@@ -27,7 +27,7 @@ public class threadPrint {
         Thread t3 = new Thread(new Runnable() {
             @Override
             public void run() {
-                while (true) {
+                while (num <= 100) {
                     orderThread.printC();
                 }
             }
