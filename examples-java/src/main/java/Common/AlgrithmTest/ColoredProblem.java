@@ -6,10 +6,10 @@ package Common.AlgrithmTest;
 public class ColoredProblem {
     public static void main(String[] args) {
         int[][] m = new int[][] {
-                {1, 0, 0, 1},
-                {1, 1, 1, 0},
-                {0, 0, 1, 1},
-                {1, 1, 0, 1}
+                {1, 1, 0, 0, 0},
+                {1, 1, 0, 0, 0},
+                {0, 0, 0, 1, 1},
+                {0, 0, 0, 1, 1}
         };
 
         int count = 0;
