@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 /**
   * Created by Elvis on 2020/2/28.
   */
-object test {
+object DailyAlive {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder().appName("a").master("local").getOrCreate()
     val rdd1 = spark.sparkContext.parallelize(
