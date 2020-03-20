@@ -7,7 +7,7 @@ import org.apache.spark.sql.SparkSession
   */
 object DailyAlive {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().appName("a").master("local").getOrCreate()
+    val spark = SparkSession.builder().appName("DailyAlive").master("local").getOrCreate()
     val rdd1 = spark.sparkContext.parallelize(
       Array(
         ("2017-01-01", "a"), ("2017-01-01", "b"), ("2017-01-01", "c"),
