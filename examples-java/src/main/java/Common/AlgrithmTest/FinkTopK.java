@@ -2,48 +2,46 @@ package Common.AlgrithmTest;
 
 import PublicClass.Utils;
 
+import java.util.Arrays;
+
 /**
  * Created by Elvis on 2020/3/13.
  */
 public class FinkTopK {
     public static void main(String[] args) {
 //        int[] arr = new int[] {1, 3, 7, 8, 12, 18, 23};
-        int[] arr = new int[] {1, 12, 23, 8, 3, 18, 7};
-        int k = 5;
-        int l = 0;
-        int r = arr.length - 1;
-        int target = l + ((r - l) >> 1);
-        int p = partition(arr, l, r, target);
-        while (true) {
-            System.out.println(arr[target] + " " + p);
-            if (p < k - 1) {
-                target = p + 1;
-            } else if (p > k - 1) {
-                target = p - 1;
-            } else {
-                System.out.println("Finish:" + arr[p]);
-                Utils.printIntArrays(arr);
-                System.out.println();
-                break;
-            }
-            p = partition(arr, l, r, target);
+        int[] arr = new int[]{0, 0, 1, 2, 4, 2, 2, 3, 1, 4};
+        int k = 8;
+        qArray(arr, 0, arr.length - 1, k);
+        Utils.printIntArrays(arr);
+    }
+
+    public static void qArray(int[] array, int l, int r, int k) {
+        int p = partition(array, l, r);
+        if (p == k) {
+            return;
+        } else if (p < k) {
+            qArray(array, p + 1, r, k);
+        } else {
+            qArray(array, l, p - 1, k);
         }
     }
 
-    public static int partition(int[] arr, int l, int r, int index) {
-        int t = arr[index];
-        int p1 = l - 1;
-        int p2 = r + 1;
-        while (l < p2) {
-            if (arr[l] < t) {
-                swap(arr, l++, ++p1);
-            } else if (arr[l] < t){
-                swap(arr, l, --p2);
+    public static int partition(int[] array, int l, int r) {
+        int pivlot = array[l + (int) Math.random() * (r - l + 1)];
+//        int pivlot = array[r];
+        int i = l - 1;
+        int j = r + 1;
+        while (l < j) {
+            if (array[l] < pivlot) {
+                swap(array, ++i, l++);
+            } else if (array[l] > pivlot) {
+                swap(array, --j, l);
             } else {
                 l++;
             }
         }
-        return p1 + 1;
+        return i + 1;
     }
 
     public static void swap(int[] arr, int i, int j) {
