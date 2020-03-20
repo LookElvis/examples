@@ -8,6 +8,23 @@ import java.util.Queue;
  * Created by liuxiang on 2018/10/11.
  */
 public class Utils {
+    // 某个分数的逆元 = 分子 * (分母 % p的逆元) = 分子 * Fermat(分母, p)
+    public static long Fermat(long a, long p){//费马求a关于b的逆元
+        return pow_mod(a, p - 2, p);
+    }
+
+    public static long pow_mod(long a, long b, long p){//a的b次方求余p
+        long ret = 1;
+        while(b != 0){
+            if((b & 1) == 1) {
+                ret = (ret * a) % p;
+            }
+            a = (a * a) % p;
+            b >>= 1;
+        }
+        return ret;
+    }
+
     public static TreeNode createTree1() {
         TreeNode root = new TreeNode(10);
         TreeNode n1 = new TreeNode(5);

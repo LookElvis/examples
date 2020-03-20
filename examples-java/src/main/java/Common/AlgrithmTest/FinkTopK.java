@@ -1,5 +1,6 @@
 package Common.AlgrithmTest;
 
+import PublicClass.TreeNode;
 import PublicClass.Utils;
 
 import java.util.Arrays;
