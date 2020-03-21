@@ -1,8 +1,9 @@
-package CommonTest
+package DetailProblem
 
 import org.apache.spark.sql.SparkSession
 
 /**
+  * 分组打印每个科目分数排名topK
   * Created by Elvis on 2020/3/20.
   */
 object topK {
