@@ -117,12 +117,14 @@ public class Utils {
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + " ");
         }
+        System.out.println();
     }
 
     public static void printIntArrays(int[] list) {
         for (int i = 0; i < list.length; i++) {
             System.out.print(list[i] + " ");
         }
+        System.out.println();
     }
 
     public static void printIntMatrix(int[][] list) {
@@ -132,12 +134,14 @@ public class Utils {
             }
             System.out.println();
         }
+        System.out.println();
     }
 
     public static void printObjectArrays(Object[] list) {
         for (int i = 0; i < list.length; i++) {
             System.out.print(list[i] + " ");
         }
+        System.out.println();
     }
 
     public static void printObjectMatrix(Object[][] list) {
@@ -147,11 +151,13 @@ public class Utils {
             }
             System.out.println();
         }
+        System.out.println();
     }
     public static void printCharArrays(char[] list) {
         for (int i = 0; i < list.length; i++) {
             System.out.print(list[i] + " ");
         }
+        System.out.println();
     }
 
     public static <T> void printDoubleArrays(List<List<T>> list) {
@@ -161,5 +167,6 @@ public class Utils {
             }
             System.out.println();
         }
+        System.out.println();
     }
 }
