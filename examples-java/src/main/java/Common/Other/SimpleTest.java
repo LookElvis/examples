@@ -43,5 +43,13 @@ public class SimpleTest {
 
 //        int[] arr = new int[] {1, 3, 5, 6};
 //        System.out.println(Arrays.asList(arr).size());
+        Map<String, Integer> map1 = new HashMap<>();
+        map1.put("abc", 3);
+        map1.put("acd", 1);
+        map1.put("ef", 2);
+        map1.put("gde", 3);
+        map1.put("g2", 3);
+        map1.put("eg", 6);
+        Utils.printArrayList(Utils.conditionSort(map1));
     }
 }

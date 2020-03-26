@@ -1,14 +1,27 @@
 package PublicClass;
 
-import java.util.ArrayDeque;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * 常用工具类
  * Created by liuxiang on 2018/10/11.
  */
 public class Utils {
+    //两个条件组合排序，先按值排序，值相等的再按键排序，升序
+    public static List conditionSort(Map map) {
+        List<Map.Entry<String, Integer>> list = new ArrayList<Map.Entry<String, Integer>>(map.entrySet());
+        Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
+            public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
+                if (o1.getValue().equals(o2.getValue())) {
+                    return o1.getKey().compareTo(o2.getKey());
+                } else {
+                    return o1.getValue().compareTo(o2.getValue());
+                }
+            }
+        });
+        return list;
+    }
+
     public static TreeNode createTree1() {
         TreeNode root = new TreeNode(10);
         TreeNode n1 = new TreeNode(5);
