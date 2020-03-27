@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 /**
  * Created by Elvis on 2020/3/26.
  */
-public class ListMutiSort {
+public class SortListMutiCondition {
     public static void main(String[] args) {
         List<Person> persons = getPersons();
 //        List<Person> result = persons.stream().sorted(Comparator.comparing(Person::getNamePinyin).thenComparing(Person::getAge)).collect(Collectors.toList());

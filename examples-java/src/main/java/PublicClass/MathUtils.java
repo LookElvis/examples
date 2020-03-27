@@ -20,6 +20,10 @@ public class MathUtils {
         return -1;
     }
 
+    // 递归求最大公约数
+    public int gcd(int x, int y) {
+        return x == 0 ? y : gcd(y % x, x);
+    }
 
     // 求1-N的逆元,避免另一种方式超时
     public static long[] reverseArray(int N, int MOD) {
