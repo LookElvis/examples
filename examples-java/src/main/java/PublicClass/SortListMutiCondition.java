@@ -16,7 +16,7 @@ public class SortListMutiCondition {
         List<Person> result = persons.stream()
                 .sorted(Comparator.comparing(Person::getName).thenComparing(Person::getAge))
                 .collect(Collectors.toList());
-        for(Person p: result) {
+        for (Person p: result) {
             System.out.println(p.getName() + " " + p.getAge());
         }
     }
