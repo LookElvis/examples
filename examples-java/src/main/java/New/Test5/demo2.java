@@ -10,11 +10,6 @@ import java.util.stream.Collectors;
  * 招商银行
  * Created by Elvis on 2020/3/27.
  */
-
-/**
- * 招商银行
- * Created by Elvis on 2020/3/27.
- */
 public class demo2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -87,4 +82,12 @@ class Line {
         this.weight = weight;
     }
 }
+
+//2
+//5
+//4 9 5 2 2
+//1 3 5 1 4
+//3
+//2 1 2
+//2 1 2
 
