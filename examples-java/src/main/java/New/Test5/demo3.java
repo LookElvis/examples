@@ -26,6 +26,13 @@ public class demo3 {
                 list.add(new Line(len[i], weight[i]));
             }
 
+            Collections.sort(list, (a, b) -> {
+                if (a.len >= b.len && a.weight >= b.weight) {
+                    return 1;
+                } else {
+                    return -1;
+                }
+            });
             Collections.sort(list, new Comparator<Line>() {
                 @Override
                 public int compare(Line o1, Line o2) {
