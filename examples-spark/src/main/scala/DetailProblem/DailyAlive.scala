@@ -3,7 +3,7 @@ package DetailProblem
 import org.apache.spark.sql.SparkSession
 
 /**
-  * 统计日活，采用倒排索引的思想
+  * 统计日活(日增长数)，采用倒排索引的思想
   * Created by Elvis on 2020/2/28.
   */
 object DailyAlive {
