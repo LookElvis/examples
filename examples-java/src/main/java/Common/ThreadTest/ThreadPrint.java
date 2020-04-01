@@ -38,14 +38,14 @@ public class ThreadPrint {
     }
 
     public synchronized void printA(){
-        while (orderNum != 3) {
+        while (orderNum != 1) {
             try {
                 wait();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        orderNum = 2;
+        orderNum = 3;
         if (num <= 100) {
             System.out.println("This is A " + num);
         }
@@ -70,14 +70,14 @@ public class ThreadPrint {
     }
 
     public synchronized void printC() {
-        while (orderNum != 1) {
+        while (orderNum != 3) {
             try {
                 wait();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        orderNum = 3;
+        orderNum = 2;
         if (num <= 100) {
             System.out.println("This is C " + num);
         }

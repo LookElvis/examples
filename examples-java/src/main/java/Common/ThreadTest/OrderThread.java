@@ -10,25 +10,19 @@ public class OrderThread {
         Thread t1 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 5; i++) {
-                    orderThread.printA();
-                }
+                orderThread.printA();
             }
         });
         Thread t2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 5; i++) {
-                    orderThread.printB();
-                }
+                orderThread.printB();
             }
         });
         Thread t3 = new Thread(new Runnable() {
             @Override
             public void run() {
-                for (int i = 0; i < 5; i++) {
-                    orderThread.printC();
-                }
+                orderThread.printC();
             }
         });
         t1.start();
@@ -37,14 +31,14 @@ public class OrderThread {
     }
 
     public synchronized void printA(){
-        while (orderNum != 3) {
+        while (orderNum != 1) {
             try {
                 wait();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        orderNum = 2;
+        orderNum = 3;
         System.out.println("This is A");
         notifyAll();
     }
@@ -63,14 +57,14 @@ public class OrderThread {
     }
 
     public synchronized void printC() {
-        while (orderNum != 1) {
+        while (orderNum != 3) {
             try {
                 wait();
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
-        orderNum = 3;
+        orderNum = 2;
         System.out.println("This is C");
         notifyAll();
     }

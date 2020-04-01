@@ -19,6 +19,8 @@ public class DeadTest {
 
 class DeadLock implements Runnable {
     private boolean flag;
+    static final Object obj1 = new Object();
+    static final Object obj2 = new Object();
     public DeadLock(boolean flag) {
         this.flag = flag;
     }
@@ -26,27 +28,22 @@ class DeadLock implements Runnable {
     public void run() {
         if (flag) {
             while (true) {
-                synchronized (ResourceSet.obj1) {
+                synchronized (obj1) {
                     System.out.println(Thread.currentThread().getName() + "持有obj1");
-                    synchronized (ResourceSet.obj2) {
+                    synchronized (obj2) {
                         System.out.println(Thread.currentThread().getName() + "持有obj2");
                     }
                 }
             }
         } else {
             while (true) {
-                synchronized (ResourceSet.obj2) {
+                synchronized (obj2) {
                     System.out.println(Thread.currentThread().getName() + "持有obj2");
-                    synchronized (ResourceSet.obj1) {
+                    synchronized (obj1) {
                         System.out.println(Thread.currentThread().getName() + "持有obj1");
                     }
                 }
             }
         }
     }
-}
-
-class ResourceSet {
-    static final Object obj1 = new Object();
-    static final Object obj2 = new Object();
 }
