@@ -1,8 +1,5 @@
 package Common.ThreadTest;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
-
 /**
  * Created by Elvis on 2020/2/16.
  */
@@ -18,7 +15,9 @@ public class DeadTest {
 }
 
 class DeadLock implements Runnable {
+    //用于标识两个线程
     private boolean flag;
+    //两个资源
     static final Object obj1 = new Object();
     static final Object obj2 = new Object();
     public DeadLock(boolean flag) {
@@ -28,6 +27,7 @@ class DeadLock implements Runnable {
     public void run() {
         if (flag) {
             while (true) {
+                //保持1并请求2
                 synchronized (obj1) {
                     System.out.println(Thread.currentThread().getName() + "持有obj1");
                     synchronized (obj2) {
@@ -37,6 +37,7 @@ class DeadLock implements Runnable {
             }
         } else {
             while (true) {
+                //保持2并请求1
                 synchronized (obj2) {
                     System.out.println(Thread.currentThread().getName() + "持有obj2");
                     synchronized (obj1) {
