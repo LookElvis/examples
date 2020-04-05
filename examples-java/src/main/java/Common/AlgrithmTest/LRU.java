@@ -1,11 +1,9 @@
 package Common.AlgrithmTest;
 
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 /**
+ * 使用LinkedHashMap的两种实现
  * Created by Elvis on 2020/3/9.
  */
 public class LRU {
@@ -23,4 +21,45 @@ public class LRU {
         // 保证线程安全
         Collections.synchronizedMap(map);
     }
+
+    /**
+     * LinkedHashMap 实现
+     * put /get 操作 O(1)
+     * 特殊情况：缓存已满，需要删除链表头
+     * created by Ethan-Walker on 2019/2/16
+     */
+    LinkedHashMap<Integer, Integer> cache;
+    int capacity;
+
+    public LRU(int capacity) {
+        cache = new LinkedHashMap<>(capacity);
+        this.capacity = capacity;
+    }
+
+    public int get(int key) {
+        if (!cache.containsKey(key)) return -1;
+
+        int val = cache.get(key);
+        cache.remove(key); // 从链表中删除
+        cache.put(key, val); // 添加到链尾
+
+        return val;
+
+    }
+
+    public void put(int key, int value) {
+        if (cache.containsKey(key)) {
+            cache.remove(key); // 已经存在，链表中删除
+        }
+
+        if (capacity == cache.size()) {
+            // cache 已满,删除链表头
+            Set<Integer> keySet = cache.keySet();
+            Iterator<Integer> iterator = keySet.iterator();
+            cache.remove(iterator.next());
+        }
+        cache.put(key, value);// 添加到链尾
+    }
 }
+
+
