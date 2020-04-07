@@ -44,7 +44,6 @@ public class LRU {
         cache.put(key, val); // 添加到链尾
 
         return val;
-
     }
 
     public void put(int key, int value) {
