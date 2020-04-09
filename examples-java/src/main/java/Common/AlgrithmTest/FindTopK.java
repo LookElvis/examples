@@ -7,7 +7,7 @@ import java.util.Arrays;
 /**
  * Created by Elvis on 2020/3/13.
  */
-public class FinkTopK {
+public class FindTopK {
     public static void main(String[] args) {
 //        int[] arr = new int[] {1, 3, 7, 8, 12, 18, 23};
         int[] arr = new int[]{0, 0, 1, 2, 4, 2, 2, 3, 1, 4};
