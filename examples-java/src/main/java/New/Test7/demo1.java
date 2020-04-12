@@ -5,7 +5,7 @@ import PublicClass.Utils;
 import java.util.Scanner;
 
 /**
- * 网易
+ * 网易互联网
  * Created by Elvis on 2020/4/7.
  */
 public class demo1 {
