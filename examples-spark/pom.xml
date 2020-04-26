@@ -46,8 +46,8 @@
 
     </dependencies>
 
-    <!--<build>-->
-        <!--<plugins>-->
+    <build>
+        <plugins>
 
             <!--&lt;!&ndash;打包带jar包&ndash;&gt;-->
             <!--<plugin>-->
@@ -76,46 +76,46 @@
             <!--</plugin>-->
 
 
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                <!--<version>3.1</version>-->
-                <!--<configuration>-->
-                    <!--<source>1.8</source>-->
-                    <!--<target>1.8</target>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
-            <!--<plugin>-->
-                <!--&lt;!&ndash; 这是个编译scala代码的 &ndash;&gt;-->
-                <!--<groupId>net.alchim31.maven</groupId>-->
-                <!--<artifactId>scala-maven-plugin</artifactId>-->
-                <!--<version>3.2.1</version>-->
-                <!--<configuration>-->
-                    <!--<scalaVersion>${scala.complete.version}</scalaVersion>-->
-                    <!--<args>-->
-                        <!--<arg>-unchecked</arg>-->
-                        <!--   <arg>-deprecation</arg>-->
-                        <!--   <arg>-feature</arg>-->
-                    <!--</args>-->
-                    <!--<javacArgs>-->
-                        <!--<javacArg>-source</javacArg>-->
-                        <!--   <javacArg>${java.version}</javacArg>       -->
-                        <!--<javacArg>-target</javacArg>-->
-                        <!--   <javacArg>${java.version}</javacArg>-->
-                    <!--</javacArgs>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>scala-compile-first</id>-->
-                        <!--<phase>process-resources</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>add-source</goal>-->
-                            <!--<goal>compile</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-        <!--</plugins>-->
-    <!--</build>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <!-- 这是个编译scala代码的 -->
+                <groupId>net.alchim31.maven</groupId>
+                <artifactId>scala-maven-plugin</artifactId>
+                <version>3.2.1</version>
+                <configuration>
+                    <scalaVersion>${scala.complete.version}</scalaVersion>
+                    <args>
+                        <arg>-unchecked</arg>
+                           <arg>-deprecation</arg>
+                           <arg>-feature</arg>
+                    </args>
+                    <javacArgs>
+                        <javacArg>-source</javacArg>
+                           <javacArg>${java.version}</javacArg>       
+                        <javacArg>-target</javacArg>
+                           <javacArg>${java.version}</javacArg>
+                    </javacArgs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>scala-compile-first</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>add-source</goal>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

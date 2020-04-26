@@ -2,7 +2,6 @@ package Project.DIY.DIY_7;
 
 import java.util.stream.Stream;
 
-import static org.junit.Assert.assertEquals;
 
 /**
  * Created by liuxiang on 2019/4/9.
