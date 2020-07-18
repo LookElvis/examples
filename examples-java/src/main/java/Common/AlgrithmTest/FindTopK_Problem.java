@@ -7,11 +7,11 @@ import java.util.Arrays;
 /**
  * Created by Elvis on 2020/3/13.
  */
-public class FindTopK {
+public class FindTopK_Problem {
     public static void main(String[] args) {
-//        int[] arr = new int[] {1, 3, 7, 8, 12, 18, 23};
-        int[] arr = new int[]{0, 0, 1, 2, 4, 2, 2, 3, 1, 4};
-        int k = 8;
+        int[] arr = new int[] {1, 3, 8, 18, 23, 12, 7};
+//        int[] arr = new int[]{0, 0, 1, 2, 4, 2, 2, 3, 1, 4};
+        int k = 1;
         qArray(arr, 0, arr.length - 1, k);
         Utils.printIntArrays(arr);
     }
