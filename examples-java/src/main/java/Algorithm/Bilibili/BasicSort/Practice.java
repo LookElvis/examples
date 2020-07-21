@@ -6,15 +6,15 @@ package Algorithm.Bilibili.BasicSort;
 public class Practice {
 	public static void main(String[] args) {
 		int[] array = new int[]{1, 2, 4, 6, 3, 6, 4, 2, 2, 8};
-		//bubble sort
+		//bubble New.Test13.sort
 //		bubbleSort(array);
-		//selection sort
+		//selection New.Test13.sort
 //		 selectionSort(array);
-		//insertion sort
+		//insertion New.Test13.sort
 //		 insertionSort(array);
-		//merge sort
+		//merge New.Test13.sort
 //		 mergeSort(array, 0, array.length - 1);
-		//quick sort
+		//quick New.Test13.sort
 //		quickSort(array, 0, array.length - 1);
 		heapSort(array);
 

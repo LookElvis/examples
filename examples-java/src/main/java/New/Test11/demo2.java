@@ -11,7 +11,7 @@ import java.util.TreeSet;
 /**
  * 第二题：请用java实现以下shell脚本的功能
  * 找出包含login的，去重，排序
- * cat /home/admin/logs/webx.log | grep "Login" | uniq -c | sort -nr
+ * cat /home/admin/logs/webx.log | grep "Login" | uniq -c | New.Test13.sort -nr
  */
 public class demo2 {
     public static void main(String[] args) {

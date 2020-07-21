@@ -17,7 +17,7 @@ public class TestBox {
         List<Object> list2 = new ArrayList<>();
         Collections.copy(list2, list1);
         int[] b = {1, 2, 3};
-//        Arrays.sort(b, new Comparator);
+//        Arrays.New.Test13.sort(b, new Comparator);
     }
 
 }
