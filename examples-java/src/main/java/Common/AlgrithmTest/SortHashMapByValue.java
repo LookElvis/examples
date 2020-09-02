@@ -34,6 +34,9 @@ public class SortHashMapByValue {
             }
         });
 
+        Collections.sort(list, (o1, o2) -> (o1.getValue() - o2.getValue()));
+
+
         for (Map.Entry e: list) {
             System.out.println(e.getKey() + " " + e.getValue());
         }
