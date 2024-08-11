@@ -4,84 +4,47 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>examples</artifactId>
-        <groupId>com.hnu.lucian</groupId>
+        <groupId>com.hnu.elvis</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>examples-spark</artifactId>
 
-
     <build>
-        <!--<plugins>-->
-
-            <!--&lt;!&ndash;打包带jar包&ndash;&gt;-->
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-assembly-plugin</artifactId>-->
-                <!--<version>3.0.0</version>-->
-                <!--<configuration>-->
-                    <!--<archive>-->
-                        <!--<manifest>-->
-                            <!--<mainClass></mainClass>-->
-                        <!--</manifest>-->
-                    <!--</archive>-->
-                    <!--<descriptorRefs>-->
-                        <!--<descriptorRef>jar-with-dependencies</descriptorRef>-->
-                    <!--</descriptorRefs>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>make-assembly</id>-->
-                        <!--<phase>package</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>single</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-
-
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                <!--<version>3.1</version>-->
-                <!--<configuration>-->
-                    <!--<source>1.8</source>-->
-                    <!--<target>1.8</target>-->
-                <!--</configuration>-->
-            <!--</plugin>-->
-            <!--<plugin>-->
-                <!--&lt;!&ndash; 这是个编译scala代码的 &ndash;&gt;-->
-                <!--<groupId>net.alchim31.maven</groupId>-->
-                <!--<artifactId>scala-maven-plugin</artifactId>-->
-                <!--<version>3.2.1</version>-->
-                <!--<configuration>-->
-                    <!--<scalaVersion>${scala.complete.version}</scalaVersion>-->
-                    <!--<args>-->
-                        <!--<arg>-unchecked</arg>-->
-                        <!--   <arg>-deprecation</arg>-->
-                        <!--   <arg>-feature</arg>-->
-                    <!--</args>-->
-                    <!--<javacArgs>-->
-                        <!--<javacArg>-source</javacArg>-->
-                        <!--   <javacArg>${java.version}</javacArg>       -->
-                        <!--<javacArg>-target</javacArg>-->
-                        <!--   <javacArg>${java.version}</javacArg>-->
-                    <!--</javacArgs>-->
-                <!--</configuration>-->
-                <!--<executions>-->
-                    <!--<execution>-->
-                        <!--<id>scala-compile-first</id>-->
-                        <!--<phase>process-resources</phase>-->
-                        <!--<goals>-->
-                            <!--<goal>add-source</goal>-->
-                            <!--<goal>compile</goal>-->
-                        <!--</goals>-->
-                    <!--</execution>-->
-                <!--</executions>-->
-            <!--</plugin>-->
-        <!--</plugins>-->
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
+
+    <dependencies>
+        <!--&lt;!&ndash;json处理&ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>com.alibaba</groupId>-->
+        <!--<artifactId>fastjson</artifactId>-->
+        <!--<version>1.2.54</version>-->
+        <!--</dependency>-->
+        <!--&lt;!&ndash;图数据库API&ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>org.neo4j</groupId>-->
+        <!--<artifactId>neo4j</artifactId>-->
+        <!--<version>3.5.3</version>-->
+        <!--</dependency>-->
+        <!--excel-->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.17</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
